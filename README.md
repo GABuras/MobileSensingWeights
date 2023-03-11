@@ -6,5 +6,4 @@ Uses machine learning to interpret audio picked up by phone to determine the wei
 
 TO TRAIN:
 
-py src/otXception/fine_tune.py data/ classes.txt src/otXception/output
 
