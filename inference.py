@@ -2,15 +2,8 @@ import argparse
 import numpy as np
 from keras.applications.xception import preprocess_input
 import keras.utils as image
-# from keras.preprocessing import image
 from keras.models import load_model
 from PIL import Image
-
-# parser = argparse.ArgumentParser()
-# parser.add_argument('model')
-# parser.add_argument('classes')
-# parser.add_argument('image')
-# parser.add_argument('--top_n', type=int, default=10)
 
 
 def main2(mo, cl, im):
@@ -39,11 +32,6 @@ def main2(mo, cl, im):
         print("Class name: %s" % (class_name))
         print("Probability: %.2f%%" % (prob))
 
-    #     c = str(print("Class name: %s" % (class_name)))
-    #     p = str(print("Probability: %.2f%%" % (prob)))
-    # return c , p
-
-
-# if __name__ == '__main__':
-#     args = parser.parse_args()
-#     main(args)
+if __name__ == '__main__':
+    args = parser.parse_args()
+    main(args)
